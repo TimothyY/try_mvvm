@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRepo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvRepoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Repo name here ..."/>
+
+        <TextView
+            android:id="@+id/tvRepoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repo id here ..."/>
+
+        <TextView
+            android:id="@+id/tvRepoUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repo url here ..."/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivRepoOwner"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRepoOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Repo owner here ..."/>
+
+                <TextView
+                    android:id="@+id/tvRepoOwnerUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repo owner url here ..."/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
